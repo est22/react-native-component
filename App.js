@@ -3,9 +3,12 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
 export default function App() {
+  const name = "리아";
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Text style={styles.text}>
+        My name is {name === '리아' ? 'Lia' : 'Missy'}
+      </Text>
       <StatusBar style="auto" />
     </View>
   );
@@ -18,4 +21,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  text: {
+    fontSize: 30,
+  }
 });
